@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <link rel="stylesheet" href="css/font-awesome.css" >
+  <link rel="stylesheet" href="css/slick.css" >
+  <link rel="stylesheet" href="css/fonts.css" >
+  <link rel="stylesheet" href="css/styles.css" >
+  <link rel="stylesheet" href="css/responsive.css" >
+  <title>Pawn America</title>
+</head>
+
+<body>
+  <!-- POP_UP -->
+  <div class="overlay"></div>
+  <div class="removepopup">
+    <h5>Remove Address?</h5>
+    <span class="form-close">
+      <img src="images/svg/close-icon.svg" alt="">
+    </span>
+    <span class="popup-note">Are you sure you want to remove this address from your account?</span>
+    <div class="edit-changes">
+      <button class="primary-btn inherit">Cancel</button>
+      <button class="primary-btn save-btn">Remove</button>
+    </div>
+  </div>
+  <!-- POP_UP -->
+  <div class="nav-icon">
+    <span></span>
+  </div>
+  <!-- header-start -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="images/svg/logo.svg" alt="logo-image" >
+      </a>
+      <div class="search-bar">
+        <input type="search" placeholder="Search products or discover how to pawn and sell" aria-label="Search" >
+        <button class="f-center">
+          <img src="images/svg/search.svg" alt="search-icon">
+        </button>
+      </div>
+      <div class="right-side">
+        <div class="user-account">
+          <div class="dropdown">
+            <div class="profile-icon">
+              <img src="images/svg/account-circle.svg" alt="">
+            </div>
+            <div class="dropdown-menu">
+              <div class="account-mobile">
+                <h6>Account</h6>
+                <img src="images/svg/close-icon.svg" class="accountmodal-close" alt="">
+              </div>
+              <a href="#">My Account</a>
+              <a href="#">Order Tracking</a>
+              <a href="#">My Quotes</a>
+              <a href="#">My Loans</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="icon-link dark-icon header-favorite-icon">
+          <img src="images/svg/favorite.svg" alt="" >
+        </a>
+        <a href="#" class="diamond-col">
+          <img src="images/svg/diamond.svg" alt="">
+          <span>$10</span>
+        </a>
+        <a href="#" class="icon-link dark-icon">
+          <img src="images/svg/cart.svg" alt="" >
+        </a>
+      </div>
+      <div class="search-bar mobile-view">
+        <input type="search" placeholder="Search products or discover how to pawn and sell" aria-label="Search" >
+        <button class="f-center">
+          <img src="images/svg/search.svg" alt="search-icon" >
+        </button>
+      </div>
+    </div>
+    <div class="container header-bottom">
+      <nav>
+        <ul class="nav-links f-center">
+          <li class="dropdown-item">
+            <a href="#" class="nav-link">Categories</a>
+            <div class="dropdown-list theme-style">
+              <div class="accordion-header">
+                <h6>Jewelry & Watches</h6>
+                <ul class="accordion-content">
+                  <li><a href="#" class="categories-item">Cate 1</a></li>
+                  <li><a href="#" class="categories-item">Cate 2</a></li>
+                  <li><a href="#" class="categories-item">Cate 3</a></li>
+                  <li><a href="#" class="categories-item">Cate 4</a></li>
+                </ul>
+              </div>
+              <div class="accordion-header">
+                <h6>Home & Garden</h6>
+                <ul class="accordion-content">
+                  <li><a href="#" class="categories-item">Cate 1</a></li>
+                  <li><a href="#" class="categories-item">Cate 2</a></li>
+                  <li><a href="#" class="categories-item">Cate 3</a></li>
+                  <li><a href="#" class="categories-item">Cate 4</a></li>
+                </ul>
+              </div>
+              <div class="accordion-header">
+                <h6>Musical Instruments & Gear</h6>
+                <ul class="accordion-content">
+                  <li><a href="#" class="categories-item">Cate 1</a></li>
+                  <li><a href="#" class="categories-item">Cate 2</a></li>
+                  <li><a href="#" class="categories-item">Cate 3</a></li>
+                  <li><a href="#" class="categories-item">Cate 4</a></li>
+                </ul>
+              </div>
+              <div class="accordion-header">
+                <h6>Computers/Tablets & Networking</h6>
+                <ul class="accordion-content">
+                  <li><a href="#" class="categories-item">Cate 1</a></li>
+                  <li><a href="#" class="categories-item">Cate 2</a></li>
+                  <li><a href="#" class="categories-item">Cate 3</a></li>
+                  <li><a href="#" class="categories-item">Cate 4</a></li>
+                </ul>
+              </div>
+              <div class="accordion-header">
+                <h6>Consumer Electronics</h6>
+                <ul class="accordion-content">
+                  <li><a href="#" class="categories-item">Cate 1</a></li>
+                  <li><a href="#" class="categories-item">Cate 2</a></li>
+                  <li><a href="#" class="categories-item">Cate 3</a></li>
+                  <li><a href="#" class="categories-item">Cate 4</a></li>
+                </ul>
+              </div>
+              <div class="accordion-header">
+                <h6>Video Games & Consoles</h6>
+                <ul class="accordion-content">
+                  <li><a href="#" class="categories-item">Cate 1</a></li>
+                  <li><a href="#" class="categories-item">Cate 2</a></li>
+                  <li><a href="#" class="categories-item">Cate 3</a></li>
+                  <li><a href="#" class="categories-item">Cate 4</a></li>
+                </ul>
+              </div>
+              <div class="accordion-header">
+                <h6>Sporting Goods</h6>
+                <ul class="accordion-content">
+                  <li><a href="#" class="categories-item">Cate 1</a></li>
+                  <li><a href="#" class="categories-item">Cate 2</a></li>
+                  <li><a href="#" class="categories-item">Cate 3</a></li>
+                  <li><a href="#" class="categories-item">Cate 4</a></li>
+                </ul>
+              </div>
+              <div class="accordion-header">
+                <h6>Clothing, Shoes & Accessories</h6>
+                <ul class="accordion-content">
+                  <li><a href="#" class="categories-item">Cate 1</a></li>
+                  <li><a href="#" class="categories-item">Cate 2</a></li>
+                  <li><a href="#" class="categories-item">Cate 3</a></li>
+                  <li><a href="#" class="categories-item">Cate 4</a></li>
+                </ul>
+              </div>
+              <div class="accordion-header">
+                <h6>Cameras & Photos</h6>
+                <ul class="accordion-content">
+                  <li><a href="#" class="categories-item">Cate 1</a></li>
+                  <li><a href="#" class="categories-item">Cate 2</a></li>
+                  <li><a href="#" class="categories-item">Cate 3</a></li>
+                  <li><a href="#" class="categories-item">Cate 4</a></li>
+                </ul>
+              </div>
+              <div class="accordion-header">
+                <h6>Coins & Paper Money</h6>
+                <ul class="accordion-content">
+                  <li><a href="#" class="categories-item">Cate 1</a></li>
+                  <li><a href="#" class="categories-item">Cate 2</a></li>
+                  <li><a href="#" class="categories-item">Cate 3</a></li>
+                  <li><a href="#" class="categories-item">Cate 4</a></li>
+                </ul>
+              </div>
+              <div class="accordion-header">
+                <h6>Business & Industrial</h6>
+                <ul class="accordion-content">
+                  <li><a href="#" class="categories-item">Cate 1</a></li>
+                  <li><a href="#" class="categories-item">Cate 2</a></li>
+                  <li><a href="#" class="categories-item">Cate 3</a></li>
+                  <li><a href="#" class="categories-item">Cate 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="#" class="nav-link">New & Featured</a></li>
+          <li><a href="#" class="nav-link">Deals</a></li>
+          <li><a href="#" class="nav-link">How to Pawn</a></li>
+          <li><a href="#" class="nav-link">How to Sell</a></li>
+          <li><a href="#" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="right-col f-center">
+        <a href="#" class="store-link f-center">
+          <svg width="28" height="35" viewBox="0 0 28 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14 17.5C14.9167 17.5 15.7014 17.1736 16.3542 16.5208C17.007 15.868 17.3334 15.0833 17.3334 14.1666C17.3334 13.25 17.007 12.4653 16.3542 11.8125C15.7014 11.1597 14.9167 10.8333 14 10.8333C13.0834 10.8333 12.2986 11.1597 11.6459 11.8125C10.9931 12.4653 10.6667 13.25 10.6667 14.1666C10.6667 15.0833 10.9931 15.868 11.6459 16.5208C12.2986 17.1736 13.0834 17.5 14 17.5ZM14 29.75C17.3889 26.6389 19.9028 23.8125 21.5417 21.2708C23.1806 18.7291 24 16.4722 24 14.5C24 11.4722 23.0347 8.99304 21.1042 7.06248C19.1736 5.13192 16.8056 4.16665 14 4.16665C11.1945 4.16665 8.82641 5.13192 6.89585 7.06248C4.9653 8.99304 4.00002 11.4722 4.00002 14.5C4.00002 16.4722 4.81947 18.7291 6.45835 21.2708C8.09724 23.8125 10.6111 26.6389 14 29.75ZM14 34.1666C9.5278 30.3611 6.18752 26.8264 3.97919 23.5625C1.77085 20.2986 0.666687 17.2778 0.666687 14.5C0.666687 10.3333 2.00696 7.01387 4.68752 4.54165C7.36808 2.06942 10.4722 0.833313 14 0.833313C17.5278 0.833313 20.632 2.06942 23.3125 4.54165C25.9931 7.01387 27.3334 10.3333 27.3334 14.5C27.3334 17.2778 26.2292 20.2986 24.0209 23.5625C21.8125 26.8264 18.4722 30.3611 14 34.1666Z" />
+          </svg>
+
+          Locator</a>
+        <a href="#" class="sell-link primary-btn">Sell Your Stuff</a>
+      </div>
+    </div>
+  </header>
+  <!-- header-end-->
+
+  <!-- My Account Bar -->
+  <div class="acooount-bar">
+    <div class="container">
+      <div class="acoount-link">
+        <a href="/index.html">Home</a>
+        <span class="account-icon">></span>
+        <span>My Account</span>
+      </div>
+      <div class="account-row">
+        <h1>Hi, Trevor</h1>
+        <button class="primary-btn inherit desktop-btn">Logout</button>
+      </div>
+    </div>
+  </div>
+  <!-- My Account Bar End -->
+
+  <!-- My Account Detail Wrapper -->
+  <div class="account-wrapper">
+    <div class="container">
+      <div class="acoount-wrapper-inner">
+        <div class="account-inner-left light-gray-border tab">
+          <button class="tablinks active" onclick="myAccountsTabs(event, 'account-info')">Account Information</button>
+          <button class="tablinks" onclick="myAccountsTabs(event, 'Orders')">Orders</button>
+          <button class="tablinks" onclick="myAccountsTabs(event, 'Quotes')">Quotes</button>
+          <button class="tablinks" onclick="myAccountsTabs(event, 'Rewards')">Rewards</button>
+          <button class="tablinks" onclick="myAccountsTabs(event, 'Loans')">Loans</button>
+          <button class="tablinks" onclick="myAccountsTabs(event, 'Layaways')">Layaways</button>
+        </div>
+        <div class="account-inner-right">
+          <div id="account-info" class="tabcontent activetab">
+
+            <form action="#" method="post" class="account-form">
+              <div class="conatct-info light-gray-border">
+                <div class="tab-row">
+                  <h6>Contact Information & Password</h6>
+                </div>
+                <div class="info-box">
+                  <label for="username">Name</label>
+                  <div class="input-inner">
+                    <input id="username" name="username" type="text" placeholder="Trevor Tillery">
+                    <div class="edit-row">
+                      <img src="./images/svg/edit.svg" alt="" class="field-edit">
+                    </div>
+                  </div>
+                </div>
+                <div class="info-box">
+                  <label for="email">email</label>
+                  <div class="input-inner">
+                    <input id="email" name="email" type="email" placeholder="name@email.com">
+                    <div class="edit-row">
+                      <img src="./images/svg/edit.svg" alt="" class="field-edit">
+                    </div>
+                  </div>
+                </div>
+                <div class="info-box">
+                  <label for="number">phone number</label>
+                  <div class="input-inner">
+                    <input id="number" name="number" type="number" placeholder="123-456-7890">
+                    <div class="edit-row">
+                      <img src="./images/svg/edit.svg" alt="" class="field-edit">
+                    </div>
+                  </div>
+                </div>
+                <div class="info-box">
+                  <label for="password">password</label>
+                  <div class="input-inner">
+                    <input id="password" name="password" type="password" value="••••••••••••••">
+                    <div class="edit-row">
+                      <img src="./images/svg/edit.svg" alt="" class="field-edit">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-addresses light-gray-border">
+                <div class="tab-row">
+                  <h6>Addresses</h6>
+                  <a href="#"><span>+</span> Add New Address</a>
+                </div>
+                <div class="info-box">
+                  <span class="edit-label">Edit Street address</span>
+                  <div class="input-inner edit-inner">
+                    <span class="require">*Required Fields</span>
+                    <div class="edit-inner-row">
+                      <label for="fname">First Name*</label>
+                      <input id="fname" name="fname" type="text" placeholder="Trevor">
+                    </div>
+                    <div class="edit-inner-row">
+                      <label for="lastname">Last Name*</label>
+                      <input id="lastname" name="lastname" type="text" placeholder="Tillery">
+                    </div>
+                    <div class="edit-inner-row">
+                      <label for="address">Street address*</label>
+                      <input id="address" name="address" type="text" placeholder="1234 Dakota Ave">
+                    </div>
+                    <div class="edit-inner-row">
+                      <label for="suite">Apt/suite/etc</label>
+                      <input id="suite" name="suite" type="text" placeholder="Apt, suite, etc (optional)">
+                    </div>
+                    <div class="edit-inner-row">
+                      <label for="city">City*</label>
+                      <input id="city" name="city" type="text" placeholder="Nashville">
+                    </div>
+                    <div class="edit-inner-row">
+                      <label for="state">state*</label>
+                      <select name="state" id="state">
+                        <option value="1">Tennessee</option>
+                        <option value="2">option 2</option>
+                        <option value="3">option 3</option>
+                        <option value="4">option 4</option>
+                      </select>
+                      <img src="./images/svg/arrow-donw.svg" alt="" class="select-arrow">
+                    </div>
+                    <div class="edit-inner-row">
+                      <label for="zipcode">Zip code*</label>
+                      <input id="zipcode" name="zipcode" type="number" placeholder="37209">
+                    </div>
+                    <div class="edit-inner-row">
+                      <label for="phonenumber">Phone number*</label>
+                      <input id="phonenumber" name="phonenumber" type="number" placeholder="123-456-7890">
+                    </div>
+                    <div class="input-check">
+                      <input type="checkbox" id="primaryaddress">
+                      <label class="note" for="primaryaddress">Set as my primary address</label>
+                    </div>
+                    <div class="edit-changes">
+                      <button class="primary-btn inherit">Cancel</button>
+                      <button class="primary-btn save-btn">Save Changes</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-box">
+                  <label for="address2">address 2</label>
+                  <div class="input-inner">
+                    <input id="address2" name="address2" type="text" placeholder="45678 Thompson Ln, Minneapolis 48567">
+                    <div class="edit-row">
+                      <img src="./images/svg/delete.svg" alt="" class="field-delete address-delete">
+                      <img src="./images/svg/edit.svg" alt="" class="field-edit">
+                    </div>
+                  </div>
+                </div>
+                <div class="info-box">
+                  <label for="address3">address 3</label>
+                  <div class="input-inner">
+                    <input id="address3" name="address3" type="text" placeholder="356 E. Mole Terrace, Mesa, AZ 85212">
+                    <div class="edit-row">
+                      <img src="./images/svg/delete.svg" alt="" class="field-delete address-delete">
+                      <img src="./images/svg/edit.svg" alt="" class="field-edit">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-info light-gray-border">
+                <div class="tab-row">
+                  <h6>Payment Methods</h6>
+                  <a href="#"><span>+</span> Add New Payment Method</a>
+                </div>
+                <div class="info-box">
+                  <div class="input-inner">
+                    <img src="./images/svg/visa.svg" alt="" class="card-img">
+                    <input type="tel" placeholder="Visa •••• 1234">
+                    <div class="edit-row">
+                      <span class="input-label">primary</span>
+                      <img src="./images/svg/delete.svg" alt="" class="field-delete">
+                      <img src="./images/svg/edit.svg" alt="" class="field-edit">
+                    </div>
+                  </div>
+                  <span class="input-label mobile-label">primary</span>
+                </div>
+                <div class="info-box">
+                  <div class="input-inner">
+                    <img src="./images/svg/mastercard.svg" alt="" class="card-img">
+                    <input type="tel" placeholder="MC •••• 4567">
+                    <div class="edit-row">
+                      <img src="./images/svg/delete.svg" alt="" class="field-delete">
+                      <img src="./images/svg/edit.svg" alt="" class="field-edit">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="notification-info light-gray-border">
+                <div class="tab-row">
+                  <h6>Notifications</h6>
+                </div>
+                <div class="notification-inner">
+                  <div class="notification-left">
+                    <label class="toggle-switch">
+                      <input type="checkbox" checked>
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                  <div class="notification-right">
+                    <span class="notification-title">
+                      Account Updates
+                    </span>
+                    <span class="notification-description">
+                      Allow communication regarding anything related to your account.
+                    </span>
+                    <div class="notification-checkbox">
+                      <label><input type="checkbox" checked> Email</label>
+                      <label><input type="checkbox" checked> Text</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="notification-inner">
+                  <div class="notification-left">
+                    <label class="toggle-switch">
+                      <input type="checkbox" checked>
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                  <div class="notification-right">
+                    <span class="notification-title">
+                      Karat Rewards Updates
+                    </span>
+                    <span class="notification-description">
+                      Allow communication regarding anything related to your Karat Rewards subscription.
+                    </span>
+                    <div class="notification-checkbox">
+                      <label><input type="checkbox" checked> Email</label>
+                      <label><input type="checkbox" checked> Text</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="notification-inner">
+                  <div class="notification-left">
+                    <label class="toggle-switch">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                  <div class="notification-right">
+                    <span class="notification-title">
+                      Deals & Marketing Updates
+                    </span>
+                    <span class="notification-description">
+                      Allow communication regarding anything related to Pawn America deals or marketing.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <button class="primary-btn inherit mobile-button">Logout</button>
+      </div>
+
+    </div>
+  </div>
+  <!-- My Account Detail Wrapper End -->
+  <!-- footer-start -->
+  <footer>
+    <div class="container">
+      <div class="inner">
+        <div class="menu">
+          <h3>Additional Information</h3>
+
+          <ul>
+            <li><a href="">Karet Rewards Program</a></li>
+            <li><a href="">About Pawn America</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Trade Program</a></li>
+            <li><a href="">Trade-Up Program</a></li>
+            <li><a href="">Exchange Program</a></li>
+            <li><a href="">Employment</a></li>
+            <li><a href="">Giving Back</a></li>
+          </ul>
+        </div>
+
+        <div class="menu">
+          <h3>Legal & Privacy</h3>
+
+          <ul>
+            <li><a href="">Customer Service Policy</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Cookie Notice</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Customer Privacy Notice</a></li>
+          </ul>
+        </div>
+
+        <div class="menu">
+          <h3>Contact Information</h3>
+
+          <ul>
+            <li>
+              <a href="">
+                <img src="images/svg/location.svg" alt="location">
+                Store Locator
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <img src="images/svg/call.svg" alt="call">
+                Call @ <span>952-646-1775</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <img src="images/svg/mail.svg" alt="mail">
+                Store Locator
+              </a>
+            </li>
+          </ul>
+
+          <ul class="social-icons">
+            <li><a href=""><img src="images/svg/instagram.svg" alt="instagram"></a></li>
+            <li><a href=""><img src="images/svg/facebook.svg" alt="facebook"></a></li>
+            <li><a href=""><img src="images/svg/twitter.svg" alt="twitter"></a></li>
+            <li><a href=""><img src="images/svg/pinterest.svg" alt="pinterest"></a></li>
+            <li><a href=""><img src="images/svg/youtube.svg" alt="youtube"></a></li>
+          </ul>
+        </div>
+
+        <div class="payments-loans">
+          <ul class="payment">
+            <li><a href=""><img src="images/svg/paypal.svg" alt="paypal"></a></li>
+            <li><a href=""><img src="images/svg/visa.svg" alt="visa"></a></li>
+            <li><a href=""><img src="images/svg/mastercard.svg" alt="mastercard"></a></li>
+            <li><a href=""><img src="images/svg/shield_lock_grey.svg" alt="shield_lock_grey"></a></li>
+          </ul>
+
+          <a href=""><img src="images/svg/mybridgenow.svg" alt="mybridgenow-logo"></a>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="copyright">
+          © 2025 Pawn America. All Rights Reserved
+        </div>
+
+        <a href="#">
+          <img src="images/svg/accessibility.svg" alt="accessibility">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer-end -->
+  <!-- footer fix nav bar mobile starts -->
+  <!-- <div class="footer-fix-bar">
+    <ul>
+      <li>
+        <a href="#">
+          <img src="images/svg/dollar-icon.svg" alt="">
+          <span>Sell</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/svg/category-icon.svg" alt="">
+          <span>Categories</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/svg/store-location-icon.svg" alt="">
+          <span>Stores</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/svg/new-icon.svg" alt="">
+          <span>New</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/svg/deal-icon.svg" alt="">
+          <span>Deals</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/svg/pawn-tips.svg" alt="">
+          <span>Pawn Tips</span>
+        </a>
+      </li>
+    </ul>
+  </div> -->
+  <!-- footer fix nav bar mobile ends -->
+
+  <!-- product modal popup starts -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close">
+        <img src="images/svg/close-icon.svg" alt="">
+      </span>
+      <div class="product-thumbnail">
+        <img id="modalImg" src="images/ring.png" alt="Product Image">
+      </div>
+      <div class="product-detail">
+        <h2 id="modalTitle">Product Title</h2>
+        <div class="product-info">
+          <span class="productinfo-title">Brand</span>
+          <span class="productinfo-descp">Lorem Ipsum</span>
+        </div>
+        <div class="product-info">
+          <span class="productinfo-title">Store location</span>
+          <span class="productinfo-descp">Lorem Ipsum</span>
+          <span class="productinfo-address">1234 Address Lane, City, State, Zip</span>
+        </div>
+        <div class="product-info">
+          <span class="product-availability">Available quantity</span>
+          <span class="product-available-qty">1</span>
+        </div>
+        <div class="product-info">
+          <div class="productinfo-opt">
+            <img src="images/svg/mail.svg" alt="">
+            <a href="" class="productinfo-opt-text">Email for More Info</a>
+          </div>
+          <div class="productinfo-opt">
+            <img src="images/svg/call.svg" alt="">
+            <a href="" class="productinfo-opt-text">Email for More Info</a>
+          </div>
+        </div>
+        <div class="view-product-btn">
+          <a href="#">view product page</a>
+        </div>
+        <div class="modal-footer">
+          <div class="modal-footer-left">
+            <p id="modalPrice" class="modalprice">$0.00</p>
+          </div>
+          <div class="modal-footer-right">
+            <ul class="modal-footer-btns">
+              <li>
+                <button class="btn">Add to Cart</button>
+              </li>
+              <li>
+                <button class="btn buynow-btn">Buy Now</button>
+              </li>
+            </ul>
+            <a href="javascript:void(0)" class="modal-favorite-icon">
+              <img src="images/svg/favorite.svg" alt="favorite">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- product modal popup ends -->
+
+  <!-- js start-->
+  <script src="js/jquery.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/custom.js"></script>
+  <!-- js end-->
+</body>
+
+</html>
