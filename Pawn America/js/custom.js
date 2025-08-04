@@ -25,49 +25,101 @@ $(function () {
 });
 
 
-// theme slider
-$(".theme-slider").slick({
-  slidesToShow: 4.2, // Show 4 full slides, half of the 5th
-  slidesToScroll: 1,
-  arrows: true,
-  dots: false,
-  infinite: false,
-  centerMode: false, // Important to avoid centering issues
-  prevArrow:
-    "<button type='button' class='slick-prev'><img src='images/svg/arrow-right.svg' alt=' slider arrow'></button>",
-  nextArrow:
-    "<button type='button' class='slick-next'><img src='images/svg/arrow-right.svg' alt=' slider arrow'></button>",
-  responsive: [
-    {
-      breakpoint: 1280,
-      settings: {
-        slidesToShow: 3.2, // Show 3 full slides, half of the 4th
-      }
-    },
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2.2, // Show 2 full slides, half of the 3rd
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        dots: false,
-        slidesToShow: 1.2, // Show 2 full slides, half of the 3rd
-      }
-    },
-    {
-      breakpoint: 640,
-      settings: {
-        arrows: false,
-        dots: false,
-        slidesToShow: 2.2, // Show 1 full slide, half of the 2nd
-      }
-    }
-  ]
+// // theme slider
+// $(".theme-slider").slick({
+//   slidesToShow: 4.2, // Show 4 full slides, half of the 5th
+//   slidesToScroll: 1,
+//   arrows: true,
+//   dots: false,
+//   infinite: false,
+//   centerMode: false, // Important to avoid centering issues
+//   appendArrows: $(".product-wrapper .slider-controls"),
+//   prevArrow:
+//     "<button type='button' class='slick-prev'><img src='images/svg/arrow-right.svg' alt=' slider arrow'></button>",
+//   nextArrow:
+//     "<button type='button' class='slick-next'><img src='images/svg/arrow-right.svg' alt=' slider arrow'></button>",
+//   responsive: [
+//     {
+//       breakpoint: 1280,
+//       settings: {
+//         slidesToShow: 3.2, // Show 3 full slides, half of the 4th
+//       }
+//     },
+//     {
+//       breakpoint: 1024,
+//       settings: {
+//         slidesToShow: 2.2, // Show 2 full slides, half of the 3rd
+//       }
+//     },
+//     {
+//       breakpoint: 768,
+//       settings: {
+//         arrows: false,
+//         dots: false,
+//         slidesToShow: 1.2, // Show 2 full slides, half of the 3rd
+//       }
+//     },
+//     {
+//       breakpoint: 640,
+//       settings: {
+//         arrows: false,
+//         dots: false,
+//         slidesToShow: 2.2, // Show 1 full slide, half of the 2nd
+//       }
+//     }
+//   ]
+// });
+
+$(".theme-slider").each(function () {
+  const $slider = $(this);
+  const $controls = $slider.closest(".product-wrapper").find(".slider-controls");
+
+  $slider.slick({
+    slidesToShow: 4.2,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    infinite: false,
+    centerMode: false,
+    appendArrows: $controls,
+    prevArrow:
+      "<button type='button' class='slick-prev'><img src='images/svg/arrow-right.svg' alt='slider arrow'></button>",
+    nextArrow:
+      "<button type='button' class='slick-next'><img src='images/svg/arrow-right.svg' alt='slider arrow'></button>",
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3.2,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2.2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          dots: false,
+          slidesToShow: 1.2,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          arrows: false,
+          dots: false,
+          slidesToShow: 2.2,
+        },
+      },
+    ],
+  });
 });
+
+
 
 // Mobile Slider starts here
 function initSlick1() {
