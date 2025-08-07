@@ -292,7 +292,9 @@ label {
   justify-content: space-between;
   margin-bottom: 50px;
 }
-
+.productwrap-title h2 {
+  margin-bottom: 0 !important;
+}
 .productwrap-title .slider-controls {
   display: flex;
   align-items: center;
@@ -520,7 +522,7 @@ label {
   left: 8px;
   background-color: var(--Primary-Red);
   color: var(--White);
-  padding: 5px 8px 2px;
+  padding: 5px 8px;
   border-radius: 16px;
   z-index: 1;
 }
@@ -949,9 +951,9 @@ header .header-bottom .right-col {
   padding-top: 50px;
 }
 
-.product-wrapper.categories h2 {
+/* .product-wrapper.categories h2 {
   margin-bottom: 50px;
-}
+} */
 
 .product-slider .slick-list {
   margin: 0 -20px;
@@ -1825,7 +1827,7 @@ footer .bottom .copyright {
   right: -30px;
   width: 328px;
   background: white;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   overflow: hidden;
   display: none;
@@ -3661,7 +3663,7 @@ footer .bottom .copyright {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  padding: 40px 8px;
+  padding: 40px 16px;
 }
 
 .empty-result-field img {
@@ -6567,7 +6569,7 @@ footer .bottom .copyright {
 /*=========== Karat Landing Page ==========*/
 .red-btn {
   font-size: 16px;
-  padding: 14px 16px;
+  padding: 16px;
   background: var(--Primary-Red);
   color: var(--White);
   text-transform: capitalize;
@@ -7720,6 +7722,9 @@ header .right-side .dark-icon.icon-link {
 .transparent-btn:hover {
   border-color: var(--Primary-Red);
 }
+.karat-faq-right .transparent-btn {
+  max-width: 120px;
+}
 .pd-banner {
   background-color: var(--Primary-Blue);
   padding: 24px 68px;
@@ -7794,13 +7799,165 @@ input[type="checkbox"]:checked::after {
   overflow: hidden;
 }
 
-/* Chrome, Safari, Edge */
 input[type="search"]::-webkit-search-cancel-button {
   display: none;
   -webkit-appearance: none;
 }
 
-/* Firefox (doesn't show one by default, but safe to include) */
 input[type="search"]::-moz-search-clear {
   display: none;
+}
+
+/* Category + Brand Landing Page Template */
+.viewall {
+  color: var(--Black);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.category-name-sec {
+  padding-block: 50px;
+}
+
+.category-name-inner {
+  max-width: 865px;
+}
+
+.category-name-inner h2 {
+  color: var(--Black);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.category-name-inner p {
+  color: var(--Dark-Gray);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+}
+
+.additional-brnad-sec {
+  padding-block: 40px;
+}
+
+.additional-brand-inner {
+  border-radius: 16px;
+  border: 1px solid var(--Light-Gray);
+  background: var(--White);
+  padding: 16px;
+  width: 100%;
+  max-width: 1182px;
+}
+.brand-inner-box {
+  max-width: 736px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+.additional-brand-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.additional-brand-top h6 {
+  color: var(--Dark-Gray);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1;
+}
+.brand-inner-box p {
+  color: var(--Dark-Gray);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.additional-badge-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.brnad-tag {
+  border-radius: 16px;
+  border: 1px solid var(--Light-Gray);
+  padding: 4px 12px;
+  background: var(--Background-Colors-Off-White);
+  color: var(--Dark-Gray);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+
+/* category-brand-secondry */
+.category-brand-secondry {
+  display: flex;
+  overflow: hidden;
+  gap: 64px;
+}
+
+.brand-secondry-left {
+  padding-block: 166px;
+  padding-left: 40px;
+  max-width: 570px;
+}
+
+.brand-secondry-right {
+  width: 100%;
+}
+
+.brand-secondry-right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.category-brand-secondry h3 {
+  color: var(--Black);
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.category-brand-secondry span {
+  color: var(--Dark-Gray);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.category-brand-cta {
+  padding-block: 40px;
+}
+.brand-secondry-left .red-btn {
+  display: block;
+  margin-top: 24px;
+  width: 221px;
+  padding: 16px;
+  text-align: center;
 }

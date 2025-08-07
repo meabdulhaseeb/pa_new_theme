@@ -575,6 +575,23 @@
 }
 
 @media (max-width: 1150px) {
+  .category-brand-secondry h3 {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+  .category-brand-secondry span {
+    font-size: 16px;
+  }
+  .brand-secondry-left {
+    padding-block: 90px;
+    padding-left: 40px;
+    max-width: 440px;
+  }
+
+  .brand-secondry-left .red-btn {
+    padding: 12px;
+  }
+
   .default-heading {
     font-size: 24px;
     margin-bottom: 16px;
@@ -698,6 +715,19 @@
 }
 
 @media (max-width: 1024px) {
+  .top-bar {
+    display: none;
+  }
+  .category-name-inner h2 {
+    font-size: 32px;
+  }
+  .category-name-inner p {
+    font-size: 16px;
+  }
+  .category-name-sec {
+    padding-block: 40px;
+  }
+
   .blog-title-row h2 {
     font-size: 31px !important;
     margin-bottom: 8px !important;
@@ -1284,6 +1314,22 @@
     margin-bottom: 22px;
   }
 
+  .category-brand-secondry {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 22px;
+  }
+
+  .brand-secondry-left {
+    max-width: 100%;
+    padding: 24px 16px;
+  }
+  .category-brand-secondry {
+    gap: 0;
+  }
+  .category-brand-secondry h3 {
+    font-size: 24px;
+  }
   .karat-banner-left {
     max-width: 100%;
     padding: 0px 16px;
@@ -1960,6 +2006,11 @@
 
   .noresult-btnwrap {
     gap: 24px;
+    width: 100%;
+  }
+
+  .quote-info-box {
+    max-width: 100%;
   }
 
   /* ------ */
@@ -2243,6 +2294,14 @@
     color: #474747;
     text-transform: capitalize;
   }
+
+  .viewall {
+    color: var(--Dark-Gray);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+  }
   .blogs h2 {
     margin-bottom: 0;
   }
@@ -2274,6 +2333,7 @@
 
   .product-item .discount {
     font-size: 10px;
+    padding: 2px 8px;
   }
 
   .productlist-top-right,
@@ -3263,6 +3323,20 @@
 }
 
 @media (max-width: 479px) {
+  .additional-brand-top img {
+    width: 16px;
+    height: 16px;
+    aspect-ratio: 1/1;
+  }
+  .additional-brand-top {
+    align-items: flex-start;
+  }
+  .category-name-inner h2 {
+    font-size: 24px;
+  }
+  .additional-brand-top h6 {
+    font-size: 16px;
+  }
   .rating img {
     width: 15px;
   }
