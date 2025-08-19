@@ -2024,6 +2024,10 @@
 }
 
 @media (max-width: 767px) {
+  .product-item .item-footer {
+    align-items: flex-start;
+  }
+
   .d-none-mobile {
     display: none;
   }
