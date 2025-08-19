@@ -105,6 +105,12 @@
 }
 
 @media (max-width: 1680px) {
+  .product-wrapper.categories .container .productwrap-title {
+    padding: 0;
+  }
+.product-wrapper.categories .container{
+  padding: 0 25px;
+}
   .container {
     padding: 0 25px;
   }
