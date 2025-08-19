@@ -1176,7 +1176,7 @@ header .header-bottom .right-col {
   margin: 12px;
   width: calc(33.33% - 24px);
   border: 1px solid #dee2ed;
-  border-radius: 16px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
@@ -1195,7 +1195,7 @@ header .header-bottom .right-col {
 }
 
 .blogs article .content {
-  padding: 24px;
+  padding: 5px;
 }
 
 .blogs article h3 {
@@ -1220,7 +1220,7 @@ header .header-bottom .right-col {
 .blogs article .category-tag {
   padding: 4px 12px;
   border-radius: 16px;
-  background: #dee2ed;
+  background: #f8f9fb;
   margin-bottom: 7px;
   text-transform: uppercase;
 }
