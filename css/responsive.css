@@ -2000,6 +2000,12 @@
 }
 
 @media (max-width: 767px) {
+  .d-none-mobile{
+    display: none;
+  }
+  .d-none-desktop{
+    display: block;
+  }
   .karat-tooltip {
     width: 320px;
   }

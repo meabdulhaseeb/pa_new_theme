@@ -7812,6 +7812,10 @@ header .right-side .dark-icon.icon-link {
   position: relative;
 }
 
+.d-none-desktop {
+  display: none;
+}
+
 .cart-counter {
   position: absolute;
   top: -5px;
