@@ -2024,6 +2024,10 @@
 }
 
 @media (max-width: 767px) {
+  .largerloans {
+    display: block;
+  }
+
   .product-item .item-footer {
     align-items: flex-start;
   }
@@ -3889,7 +3893,7 @@
   }
 
   .footer-fix-bar ul {
-    width: 430px;
+    width: 100%;
   }
 
   .product-item .product-img img {
@@ -3927,7 +3931,9 @@
 }
 
 @media (max-width: 374px) {
-
+  .footer-fix-bar ul {
+    width: 400px;
+  }
   .attach-span,
   .drop-zone__prompt,
   .drop-zone__max {
