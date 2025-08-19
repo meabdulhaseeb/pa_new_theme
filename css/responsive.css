@@ -2230,8 +2230,13 @@
     display: none;
   }
 
-  .container {
+  .container,
+  .product-wrapper.categories .container {
     padding: 0 16px;
+  }
+
+  .categories .inner .category {
+    justify-content: initial;
   }
 
   .banner-images,
