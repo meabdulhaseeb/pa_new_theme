@@ -620,6 +620,16 @@ header {
   border-bottom: 1px solid var(--Background-Colors-Off-White);
   background: var(--White);
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10001;
+}
+
+.header-spacing {
+  height: 210px;
 }
 
 header .container {
@@ -7810,19 +7820,6 @@ a.enrollnow-btn {
 
 header .right-side .dark-icon.icon-link {
   position: relative;
-}
-
-header {
-  transition: all 0.3s;
-}
-
-header.scrolled {
-  position: fixed;
-  z-index: 100001;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 .d-none-desktop {

@@ -3,30 +3,21 @@ $(function () {
   // Show/hide tooltip on info icon click
   $(document).on('click', '.karat-tooltip-trigger', function (e) {
     e.stopPropagation();
-    var $enrollNow = $(this).closest('.enroll-now');
-    var $tooltip = $enrollNow.find('.karat-tooltip');
-    var $arrow = $enrollNow.find('.karat-tooltip-arrow');
-    $('.enroll-now').not($enrollNow).each(function () {
-      $(this).find('.karat-tooltip').hide();
-      $(this).find('.karat-tooltip-arrow').hide();
-    });
-    $tooltip.toggle();
-    if ($tooltip.is(':visible')) {
-      $arrow.show();
-    } else {
-      $arrow.hide();
-    }
+      var $enrollNow = $(this).closest('.enroll-now');
+      var $tooltip = $enrollNow.find('.karat-tooltip');
+      var $arrow = $enrollNow.find('.karat-tooltip-arrow');
+      $('.enroll-now').not($enrollNow).each(function(){
+        $(this).find('.karat-tooltip').hide();
+        $(this).find('.karat-tooltip-arrow').hide();
+      });
+      $tooltip.toggle();
+      if ($tooltip.is(':visible')) {
+        $arrow.show();
+      } else {
+        $arrow.hide();
+      }
   });
-  const $target = $('header'); // Change to your target element
-  const threshold = 50; // Scroll distance in pixels
 
-  $(window).on('scroll', function () {
-    if ($(this).scrollTop() > threshold) {
-      $target.addClass('scrolled');
-    } else {
-      $target.removeClass('scrolled');
-    }
-  });
   // Close tooltip on close button click
   $(document).on('click', '.karat-tooltip-close', function (e) {
     e.stopPropagation();
@@ -40,10 +31,10 @@ $(function () {
   // Hide tooltip when clicking outside
   $(document).on('click', function (e) {
     if (!$(e.target).closest('.karat-tooltip, .karat-tooltip-trigger').length) {
-      $('.enroll-now').each(function () {
-        $(this).find('.karat-tooltip').hide();
-        $(this).find('.karat-tooltip-arrow').hide();
-      });
+        $('.enroll-now').each(function(){
+          $(this).find('.karat-tooltip').hide();
+          $(this).find('.karat-tooltip-arrow').hide();
+        });
     }
   });
 });
@@ -131,9 +122,12 @@ $(".theme-slider").each(function () {
     infinite: false,
     centerMode: false,
     appendArrows: $controls,
-    prevArrow: "<button type='button' class='slick-prev'><img src='images/svg/arrow-right.svg' alt='slider arrow'></button>",
-    nextArrow: "<button type='button' class='slick-next'><img src='images/svg/arrow-right.svg' alt='slider arrow'></button>",
-    responsive: [{
+    prevArrow:
+      "<button type='button' class='slick-prev'><img src='images/svg/arrow-right.svg' alt='slider arrow'></button>",
+    nextArrow:
+      "<button type='button' class='slick-next'><img src='images/svg/arrow-right.svg' alt='slider arrow'></button>",
+    responsive: [
+      {
         breakpoint: 1280,
         settings: {
           slidesToShow: 3.2,
@@ -180,7 +174,8 @@ function initSlick1() {
         centerMode: false,
         autoplay: true,
         autoplaySpeed: 8000,
-        responsive: [{
+        responsive: [
+          {
             breakpoint: 1024,
             settings: {
               slidesToShow: 3.2, // Show 2 full slides, half of the 3rd
@@ -216,7 +211,8 @@ function initSlick() {
         centerMode: false,
         autoplay: true,
         autoplaySpeed: 8000,
-        responsive: [{
+        responsive: [
+          {
             breakpoint: 1024,
             settings: {
               slidesToShow: 2, // Show 2 full slides, half of the 3rd
@@ -1088,3 +1084,4 @@ document.addEventListener("DOMContentLoaded", function () {
     input.setAttribute("placeholder", "Search or sell...");
   }
 });
+
