@@ -7812,6 +7812,19 @@ header .right-side .dark-icon.icon-link {
   position: relative;
 }
 
+header {
+  transition: all 0.3s;
+}
+
+header.scrolled {
+  position: fixed;
+  z-index: 100001;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .d-none-desktop {
   display: none;
 }

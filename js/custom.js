@@ -18,7 +18,7 @@ $(function () {
     }
   });
   const $target = $('header'); // Change to your target element
-  const threshold = 100; // Scroll distance in pixels
+  const threshold = 50; // Scroll distance in pixels
 
   $(window).on('scroll', function () {
     if ($(this).scrollTop() > threshold) {
