@@ -2318,10 +2318,11 @@
   }
 
   .product-item .save {
-    padding: 0 3px;
+    padding: 2px 8px;
     font-size: 11px;
     bottom: 5px;
     left: 5px;
+    line-height: initial;
   }
 
   .banner .deals {
