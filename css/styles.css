@@ -982,7 +982,7 @@ header .header-bottom .right-col {
 /* category-css start */
 .categories .inner {
   display: flex;
-  /* margin: 0 -20px; */
+  justify-content: space-between;
 }
 
 .categories .inner .category {
