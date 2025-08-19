@@ -1,3 +1,43 @@
+// Karat Rewards Tooltip: Show on click, close on close button
+$(function () {
+  // Show/hide tooltip on info icon click
+  $(document).on('click', '.karat-tooltip-trigger', function (e) {
+    e.stopPropagation();
+      var $enrollNow = $(this).closest('.enroll-now');
+      var $tooltip = $enrollNow.find('.karat-tooltip');
+      var $arrow = $enrollNow.find('.karat-tooltip-arrow');
+      $('.enroll-now').not($enrollNow).each(function(){
+        $(this).find('.karat-tooltip').hide();
+        $(this).find('.karat-tooltip-arrow').hide();
+      });
+      $tooltip.toggle();
+      if ($tooltip.is(':visible')) {
+        $arrow.show();
+      } else {
+        $arrow.hide();
+      }
+  });
+
+  // Close tooltip on close button click
+  $(document).on('click', '.karat-tooltip-close', function (e) {
+    e.stopPropagation();
+    var $enrollNow = $(this).closest('.enroll-now');
+    var $tooltip = $enrollNow.find('.karat-tooltip');
+    var $arrow = $enrollNow.find('.karat-tooltip-arrow');
+    $tooltip.hide();
+    $arrow.hide();
+  });
+
+  // Hide tooltip when clicking outside
+  $(document).on('click', function (e) {
+    if (!$(e.target).closest('.karat-tooltip, .karat-tooltip-trigger').length) {
+        $('.enroll-now').each(function(){
+          $(this).find('.karat-tooltip').hide();
+          $(this).find('.karat-tooltip-arrow').hide();
+        });
+    }
+  });
+});
 // nav dropdown function
 $(function () {
   $(".accordion-content").slideUp(300);
@@ -76,7 +116,7 @@ $(".theme-slider").each(function () {
 
   $slider.slick({
     slidesToShow: 4.2,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     arrows: true,
     dots: false,
     infinite: false,
@@ -181,7 +221,7 @@ function initSlick() {
           {
             breakpoint: 640,
             settings: {
-              slidesToShow: 1, // Show 1 full slide, half of the 2nd
+              slidesToShow: 1.2, // Show 1 full slide, half of the 2nd
             }
           }
         ]
@@ -924,31 +964,28 @@ $(".pd-banner svg").click(function () {
 
 
 
-const btn = document.getElementById('qtyBtn');
-const options = document.getElementById('qtyOptions');
 
-// Toggle dropdown visibility
-btn.addEventListener('click', function (e) {
-  e.stopPropagation();
-  options.classList.toggle('hidden');
-});
-
-// Handle option selection
-options.querySelectorAll('li').forEach(option => {
-  option.addEventListener('click', function () {
-    const value = this.getAttribute('data-value');
-    // Update just the <strong> inside the button
-    const strongEl = btn.querySelector('strong');
-    if (strongEl) {
-      strongEl.textContent = value;
-    }
-    options.classList.add('hidden');
-  });
-});
-
-// Close dropdown if clicking outside
-document.addEventListener('click', function () {
-  options.classList.add('hidden');
+// jQuery version for qtyBtn and qtyOptions
+$(function () {
+  var $btn = $('#qtyBtn');
+  var $options = $('#qtyOptions');
+  if ($btn.length && $options.length) {
+    $btn.on('click', function (e) {
+      e.stopPropagation();
+      $options.toggleClass('hidden');
+    });
+    $options.find('li').on('click', function () {
+      var value = $(this).data('value');
+      var $strongEl = $btn.find('strong');
+      if ($strongEl.length) {
+        $strongEl.text(value);
+      }
+      $options.addClass('hidden');
+    });
+    $(document).on('click', function () {
+      $options.addClass('hidden');
+    });
+  }
 });
 
 
