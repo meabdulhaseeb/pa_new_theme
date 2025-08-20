@@ -200,7 +200,7 @@ function initSlick1() {
 
 // Mobile Slider 2 starts here
 function initSlick() {
-  if ($(window).width() < 1024) {
+  if ($(window).width() < 1200) {
     if (!$(".mobile-slider2").hasClass("slick-initialized")) {
       $(".mobile-slider2").slick({
         slidesToShow: 2.2, // Default for <1024px
