@@ -88,6 +88,32 @@
   }
 }
 
+@media(min-width: 1200px) and (max-width: 1352px) {
+
+  .productlist-results h4,
+  .product-sidebar {
+    font-size: 18px;
+  }
+}
+
+@media(min-width: 992px) and (max-width: 1200px) {
+
+  .productlist-breadcrumbs,
+  .product-sidebar-outer {
+    max-width: 315px;
+  }
+
+  .productlist-top-right,
+  .main-product-list {
+    max-width: calc(100% - 350px);
+  }
+
+  .productlist-grid-view {
+    gap: 15px;
+    row-gap: 15px;
+  }
+}
+
 @media (max-width: 1850px) {
   .product-box-link {
     flex-direction: column;
@@ -717,6 +743,7 @@
   .checkout-wrapper {
     gap: 70px;
   }
+
 }
 
 @media (max-width: 1150px) {
