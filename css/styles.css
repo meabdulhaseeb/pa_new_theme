@@ -3058,6 +3058,7 @@ footer .bottom .copyright {
   display: flex;
   align-items: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .multistore-title h6 {
@@ -3078,7 +3079,7 @@ footer .bottom .copyright {
   height: 35px;
   display: flex;
   align-items: center;
-  padding: 0 12px;
+  padding: 5px 12px;
   cursor: pointer;
 }
 
