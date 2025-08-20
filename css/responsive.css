@@ -2501,6 +2501,10 @@
     line-height: 1.2;
   }
 
+  .testimonial p {
+    min-height: 67px;
+  }
+
   .blogs article p {
     margin-bottom: 24px;
   }
