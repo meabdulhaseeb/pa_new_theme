@@ -11,6 +11,12 @@
   }
 }
 
+@media(min-width: 1681px) and (max-width: 1721px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
 @media (min-width: 1025px) {
   .dropdown-item:hover .dropdown-list {
     transform: translateY(10px);
@@ -407,7 +413,7 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1370px) {
 
   header .right-side .icon-link svg {
     transform: translate(-6px, -6px) scale(0.65);
@@ -3934,6 +3940,7 @@
   .footer-fix-bar ul {
     width: 400px;
   }
+
   .attach-span,
   .drop-zone__prompt,
   .drop-zone__max {
