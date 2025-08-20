@@ -2639,6 +2639,7 @@ footer .bottom .copyright {
   align-items: center;
   margin-bottom: 16px;
   padding: 0 15px;
+  width: fit-content;
 }
 
 .prodcut-map span {
