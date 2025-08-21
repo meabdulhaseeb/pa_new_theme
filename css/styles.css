@@ -2743,6 +2743,10 @@ footer .bottom .copyright {
   border-color: var(--Primary-Red);
 }
 
+.product-bottom-buttons a.default-transparent-button.primary-btn {
+  color: #fff;
+}
+
 .item-product-detail {
   display: flex;
   justify-content: space-between;
