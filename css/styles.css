@@ -4,6 +4,7 @@
   --White: #fff;
   --Off-Gray: #c0c0c0;
   --Primary-Red: #e71c24;
+  --Primary-Hover-Red: #ba121b;
   --Primary-Blue: #067cb7;
   --Dark-Gray: #474747;
   --Medium-Gray: #666666;
@@ -46,6 +47,10 @@
   display: none;
 }
 
+.footer-fix-bar ul li a:hover img{
+  filter: invert(18%) sepia(97%) saturate(5295%) hue-rotate(350deg) brightness(92%) contrast(107%);
+}
+
 .dark-icon img,
 .detail-fav-btn img {
   color: var(--Dark-Gray);
@@ -58,16 +63,20 @@
   cursor: pointer;
 }
 
+.dark-icon:hover{
+  background-color: var(--Background-Colors-Off-White);
+}
+
 .icon img {
   transition: 0.2s all ease-in-out;
 }
 
 .icon:hover img {
-  filter: brightness(4) invert(1);
+  filter: invert(18%) sepia(97%) saturate(5295%) hue-rotate(350deg) brightness(92%) contrast(107%);
 }
 
 .icon.quick-view:hover img {
-  filter: brightness(4) invert(0);
+  filter: invert(18%) sepia(97%) saturate(5295%) hue-rotate(350deg) brightness(92%) contrast(107%);
 }
 
 header .search-bar.mobile-view {
@@ -258,8 +267,26 @@ label {
 }
 
 .primary-btn:hover {
+  background: var(--Primary-Hover-Red);
+}
+
+.primary-btn-outline {
   background: var(--White);
-  color: var(--Primary-Red);
+  color: #000;
+  border: 1px solid #666666;
+  padding: 10px 16px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  border-radius: 40px;
+  transition: 0.2s all ease-in-out;
+}
+
+.primary-btn-outline:hover{
+  color:var(--Primary-Red);
+  background-color: var(--Background-Colors-Off-White);
 }
 
 /* primary-btn end */
@@ -295,6 +322,15 @@ label {
 
 .productwrap-title h2 {
   margin-bottom: 0 !important;
+  cursor: pointer;
+}
+
+.productwrap-title h2:hover {
+  color: var(--Primary-Red);
+}
+
+.productwrap-title.not-red h2:hover {
+  color: unset;
 }
 
 .productwrap-title .slider-controls {
@@ -387,12 +423,7 @@ label {
 }
 
 .slider-controls .slick-arrow:hover {
-  border: 1px solid var(--Black);
-  background: var(--Black);
-}
-
-.slider-controls .slick-arrow:hover img {
-  filter: invert();
+  background: var(--Background-Colors-Off-White);
 }
 
 .slider-controls .slick-disabled img {
@@ -476,6 +507,10 @@ label {
   text-overflow: ellipsis;
   height: 57.6px;
   overflow: hidden;
+}
+
+.product-item h3:hover{
+  color:var(--Primary-Red);
 }
 
 .product-item .product-img {
@@ -567,7 +602,8 @@ label {
 
 .btn-wrap button:hover {
   cursor: pointer;
-  background: var(--Primary-Red);
+  background: var(--Background-Colors-Off-White);
+  color: var(--Primary-Red);
 }
 
 .item-footer .price {
@@ -682,6 +718,10 @@ header .search-bar button {
   fill: var(--White);
 }
 
+header .search-bar button:hover {
+  background-color: var(--Primary-Hover-Red);
+}
+
 header .right-side {
   display: flex;
   justify-content: center;
@@ -700,8 +740,9 @@ header .right-side .icon-link {
   margin-left: 32px;
 }
 
-header .right-side a:hover {
+header .right-side a:hover img {
   color: var(--Primary-Red);
+  filter: invert(18%) sepia(97%) saturate(5295%) hue-rotate(350deg) brightness(92%) contrast(107%);
 }
 
 header .right-side a svg path {
@@ -1036,6 +1077,10 @@ header .header-bottom .right-col {
   font-size: 24px;
   line-height: 1.2;
 }
+.category h3:hover{
+  color:var(--Primary-Red);
+  cursor: pointer;
+}
 
 /* category-css end */
 
@@ -1067,19 +1112,6 @@ header .header-bottom .right-col {
 .rewards p {
   color: var(--White);
   margin-bottom: 18px;
-}
-
-.rewards a {
-  background: var(--White);
-  color: #000;
-  border: 1px solid #666666;
-  padding: 10px 16px;
-}
-
-.rewards a:hover {
-  background: var(--Primary-Red);
-  color: var(--White);
-  border: 1px solid var(--Primary-Red);
 }
 
 .rewards .img-wrap {
@@ -1224,6 +1256,11 @@ header .header-bottom .right-col {
   margin-bottom: 5px;
 }
 
+.blogs article h3:hover{
+  color:var(--Primary-Red);
+  cursor: pointer;
+}
+
 .blogs article p {
   font-size: 16px;
   color: var(--Dark-Gray);
@@ -1247,7 +1284,6 @@ header .header-bottom .right-col {
 }
 
 .blogs article a {
-  color: #171717;
   font-family: Inter;
   font-size: 16px;
   font-weight: bold;
@@ -1255,12 +1291,6 @@ header .header-bottom .right-col {
   padding: 14px 16px;
   transition: all ease-in-out 0.3s;
   border-radius: 50px;
-}
-
-.blogs article a:hover {
-  background: var(--Primary-Red);
-  color: var(--White);
-  border: 1px solid var(--Primary-Red);
 }
 
 /* Blogs End */
@@ -1337,6 +1367,10 @@ footer ul.social-icons {
   display: flex;
   align-items: center;
   gap: 24px;
+}
+
+footer ul.social-icons li a:hover img{
+  filter: invert(18%) sepia(97%) saturate(5295%) hue-rotate(350deg) brightness(92%) contrast(107%);
 }
 
 footer ul li {
@@ -8005,6 +8039,10 @@ input[type="search"]::-moz-search-clear {
   font-style: normal;
   font-weight: 800;
   line-height: 1;
+}
+
+.viewall:hover {
+  color: var(--Primary-Red);
 }
 
 .category-name-sec {
