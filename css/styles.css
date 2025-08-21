@@ -2195,17 +2195,16 @@ footer .bottom .copyright {
   justify-content: center;
 }
 
+.social-btn .google-btn:hover{
+  background-color: var(--Background-Colors-Off-White);
+}
+
 .social-btn .facebook-btn {
   color: var(--White);
 }
 
 .form-inner .social-btn img {
   margin-right: 5px;
-}
-
-.social-btn button:hover {
-  background: var(--Primary-Red);
-  color: var(--White);
 }
 
 .facebook-btn {
@@ -8214,4 +8213,15 @@ input[type="search"]::-moz-search-clear {
   width: 221px;
   padding: 16px;
   text-align: center;
+}
+a.forgot-password:hover{
+font-weight: bold;
+}
+.signin-modal > .form-title ul li:last-child:hover{
+  color:var(--Primary-Red);
+  font-weight: bold;
+}
+.register-modal > .form-title ul li:first-child:hover{
+  color:var(--Primary-Red);
+  font-weight: bold;
 }
