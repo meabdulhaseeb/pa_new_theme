@@ -109,6 +109,8 @@
   }
 }
 
+
+
 @media(min-width: 992px) and (max-width: 1200px) {
 
   .productlist-breadcrumbs,
@@ -1228,6 +1230,10 @@
     font-size: 16px;
   }
 
+  .policy .wrap p {
+    font-size: 13px;
+  }
+
   footer .payments-loans {
     width: 100%;
     align-items: flex-start;
@@ -1433,6 +1439,23 @@
 
   .footer-fix-bar.dropdown-open {
     overflow: visible;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 900px) {
+  .policy {
+    flex-wrap: nowrap;
+    gap: 15px;
+  }
+
+  .policy img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .policy .wrap {
+    margin: 0 0 0;
   }
 }
 
@@ -2070,6 +2093,13 @@
 }
 
 @media (max-width: 767px) {
+  .rewards .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .largerloans {
     display: block;
   }
