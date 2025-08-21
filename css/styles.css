@@ -514,7 +514,7 @@ label {
   color:var(--Black);
 }
 
-a[href]:hover{
+.product-item a:hover{
   color:var(--Primary-Red);
   font-weight: bold;
 }
