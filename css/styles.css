@@ -1407,6 +1407,7 @@ footer ul li a {
 
 footer ul li a:hover {
   color: var(--Primary-Red);
+  font-weight: bold;
 }
 
 footer ul li a span {
