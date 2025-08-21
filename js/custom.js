@@ -359,8 +359,8 @@ $(document).ready(function () {
 
   // show Reset Password Modal
   $(".forgot-password").click(function () {
-    $(".overlay, .signin-modal").fadeOut();
-    $(".overlay, .resetpassword-modal").fadeIn();
+    $(".signin-modal").fadeOut();
+    $(".resetpassword-modal").fadeIn();
   });
 
   // Hide Reset Password Modal when clicking outside or close button
