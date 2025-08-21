@@ -3736,9 +3736,29 @@
 }
 
 @media (max-width: 479px) {
+
+  .productlist-list-view .product-item.promotion .price,
+  .productlist-list-view .price {
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+
+  .productlist-list-view .item-price .old-price {
+    margin-top: 0;
+  }
+
   .prodcut-map span {
     font-size: 12px;
     margin-left: 4px;
+  }
+
+  .productlist-list-view .prodcut-map {
+    max-width: max-content;
+    margin-bottom: 12px;
+  }
+
+  .productlist-list-view .listview-itemfooter-mobile .item-price {
+    align-items: flex-start;
   }
 
   .prodcut-map {
