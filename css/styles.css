@@ -51,6 +51,10 @@
   filter: invert(18%) sepia(97%) saturate(5295%) hue-rotate(350deg) brightness(92%) contrast(107%);
 }
 
+.footer-fix-bar ul li a:hover span{
+  color:var(--Primary-Red);
+}
+
 .dark-icon img,
 .detail-fav-btn img {
   color: var(--Dark-Gray);
@@ -856,6 +860,11 @@ header .header-bottom .right-col {
   cursor: pointer;
 }
 
+header .header-bottom .accordion-header:not(.open) h6:hover{
+  color:var(--Primary-Red);
+  font-weight: bold;
+}
+
 .accordion-header h6::after {
   content: url("../images/svg/add.svg");
   width: 24px;
@@ -876,7 +885,19 @@ header .header-bottom .right-col {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding: 10px 15px;
+  padding: 15px;
+  margin-top: 15px;
+  border-top: 0.5px solid var(--Light-Gray);
+  border-bottom: 0.5px solid var(--Light-Gray);
+}
+
+div.accordion-header.open .accordion-content li a:hover{
+  color:var(--Primary-Red);
+  font-weight: bold;
+}
+
+div.accordion-header.open .accordion-content li:not(:last-child){
+  margin-bottom: 15px;
 }
 
 .categories {
