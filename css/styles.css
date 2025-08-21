@@ -2631,8 +2631,8 @@ footer .bottom .copyright {
 }
 
 .prodcut-map {
-  width: 162px;
-  height: 40px;
+  max-width: 162px;
+  min-height: 40px;
   border-radius: 16px;
   border: 1px solid var(--Light-Gray);
   display: flex;
