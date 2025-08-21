@@ -400,7 +400,7 @@
 }
 
 @media (max-width: 1366px) {
-  .product-item h3 {
+  .product-item a {
     font-size: 18px;
     height: 43.2px;
   }
@@ -2499,12 +2499,12 @@
     margin: 15px 0 0 0;
   }
 
-  .product-item h3,
+  .product-item a,
   .price {
     font-size: 16px;
   }
 
-  .product-item h3 {
+  .product-item a {
     height: 38.4px;
   }
 
@@ -3597,7 +3597,8 @@
 
   .signin-modal,
   .resetpassword-modal,
-  .register-modal {
+  .register-modal,
+  .accountverify-modal {
     top: 0;
     left: 0;
     transform: translate(0%, 0%);
@@ -3852,7 +3853,7 @@
     padding-block: 0px 30px;
   }
 
-  .product-item h3 {
+  .product-item a {
     margin-bottom: 10px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -3861,7 +3862,7 @@
     height: calc(1.2em * 2);
   }
 
-  .product-wrapper.promotions .product-item h3 {
+  .product-wrapper.promotions .product-item a {
     margin-bottom: 7px;
   }
 

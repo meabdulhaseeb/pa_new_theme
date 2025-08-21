@@ -501,7 +501,7 @@ label {
   padding: 0 20px;
 }
 
-.product-item h3 {
+.product-item a {
   font-family: Inter;
   font-weight: normal;
   font-size: 24px;
@@ -511,10 +511,12 @@ label {
   text-overflow: ellipsis;
   height: 57.6px;
   overflow: hidden;
+  color:var(--Black);
 }
 
-.product-item h3:hover{
+a[href]:hover{
   color:var(--Primary-Red);
+  font-weight: bold;
 }
 
 .product-item .product-img {
@@ -2083,6 +2085,20 @@ footer .bottom .copyright {
   width: 600px;
   min-height: 670px;
   height: 92%;
+  overflow-y: scroll;
+  border-radius: 16px;
+  z-index: 99999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.accountverify-modal{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 600px;
   overflow-y: scroll;
   border-radius: 16px;
   z-index: 99999;

@@ -304,6 +304,9 @@ $(document).ready(function () {
   // Hide modal when clicking outside or close button
   $(".overlay, .form-close").click(function () {
     $(".overlay, .signin-modal").fadeOut();
+    $(".overlay, .register-modal").fadeOut();
+    $(".overlay, .accountverify-modal").fadeOut();
+    $(".overlay, .resetpassword-modal").fadeOut();
   });
 
   // register modal starts here
@@ -311,18 +314,9 @@ $(document).ready(function () {
     $(".overlay, .register-modal").fadeIn();
   });
 
-  // Hide modal when clicking outside or close button
-  $(".overlay, .form-close").click(function () {
-    $(".overlay, .register-modal").fadeOut();
-  });
-
   // Remove modal starts here
   $(".openPopup").click(function () {
     $(".overlay, .removepopup").fadeIn();
-  });
-  // Hide modal when clicking outside or close button
-  $(".overlay, .form-close").click(function () {
-    $(".overlay, .removepopup").fadeOut();
   });
 
   // Sign In Form validation
