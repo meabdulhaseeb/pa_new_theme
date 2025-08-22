@@ -302,7 +302,7 @@ $(document).ready(function () {
     $(".overlay, .signin-modal").fadeIn();
   });
   // Hide modal when clicking outside or close button
-  $(".overlay, .form-close").click(function () {
+  $(".form-close").click(function () {
     $(".overlay, .signin-modal").fadeOut();
     $(".overlay, .register-modal").fadeOut();
     $(".overlay, .accountverify-modal").fadeOut();
@@ -358,7 +358,7 @@ $(document).ready(function () {
   });
 
   // Hide Reset Password Modal when clicking outside or close button
-  $(".overlay, .form-close").click(function () {
+  $(".form-close").click(function () {
     $(".overlay, .resetpassword-modal").fadeOut();
   });
 
@@ -401,12 +401,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalImg = document.getElementById("modalImg");
   const modalTitle = document.getElementById("modalTitle");
   const modalPrice = document.getElementById("modalPrice");
-  const closeBtn = document.querySelector(".close");
   document.querySelectorAll(".quick-view").forEach((btn) => {
     btn.addEventListener("click", function () {
       const productItem = this.closest(".product-item");
       const imgSrc = productItem.querySelector(".main-product").src;
-      const title = productItem.querySelector("a").textContent;
+      const title = productItem.querySelector("h3").textContent;
       const price = productItem.querySelector(".price").textContent;
       modalImg.src = imgSrc;
       modalTitle.textContent = title;
@@ -414,9 +413,10 @@ document.addEventListener("DOMContentLoaded", function () {
       modal.style.display = "flex";
     });
   });
-  closeBtn.addEventListener("click", function () {
-    modal.style.display = "none";
-  });
+});
+
+$(document).on('click','.close',function(){
+  document.getElementById("productModal").style.display = "none";
 });
 
 // My Acoount Tabs Js

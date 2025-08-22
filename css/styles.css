@@ -67,7 +67,7 @@
   cursor: pointer;
 }
 
-.dark-icon:hover{
+.dark-icon:hover:not(.no-bg){
   background-color: var(--Background-Colors-Off-White);
 }
 
@@ -740,6 +740,11 @@ header .right-side .text-link {
   color: var(--Dark-Gray);
   text-decoration: none;
   margin-left: 16px;
+}
+
+header .right-side .text-link:hover{
+  color:var(--Primary-Red);
+  font-weight: bold;
 }
 
 header .right-side .icon-link {
