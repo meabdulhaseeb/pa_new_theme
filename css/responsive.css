@@ -1292,7 +1292,7 @@
     display: block;
   }
 
-  .inner.mobile-slider.popular-search-category .category h3 {
+  .inner.mobile-slider.popular-search-category .category a {
     width: 100%;
   }
 
@@ -2492,7 +2492,7 @@
     height: 360px;
   }
 
-  .category h3 {
+  .category a {
     font-size: 14px;
     color: #474747;
     font-weight: 400;

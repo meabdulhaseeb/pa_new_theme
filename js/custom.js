@@ -405,7 +405,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.addEventListener("click", function () {
       const productItem = this.closest(".product-item");
       const imgSrc = productItem.querySelector(".main-product").src;
-      const title = productItem.querySelector("h3").textContent;
+      const title = productItem.querySelector("a").textContent;
       const price = productItem.querySelector(".price").textContent;
       modalImg.src = imgSrc;
       modalTitle.textContent = title;
