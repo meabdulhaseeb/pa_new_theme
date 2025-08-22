@@ -1876,7 +1876,6 @@ footer .bottom .copyright {
 .user-account .dropdown {
   position: relative;
   display: inline-block;
-  margin-right: 10px;
   z-index: 9999;
 }
 
